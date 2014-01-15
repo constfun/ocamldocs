@@ -1,0 +1,16 @@
+@import 'compass';
+@import 'compass/reset';
+@import 'compass/layout';
+@import 'normalize';
+@import 'foundation/settings';
+@import 'foundation';
+
+// Compass has an outdated idea of what a clearfix is.
+// http://www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
